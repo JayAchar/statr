@@ -12,6 +12,10 @@ The package provides functions to analyse and present data using statistical met
 \code{\link{glm_generator}}
 
 \code{\link{normal_checkr}}
+
+\code{\link{tabulate_categorical}}
+
+\code{\link{tabulate_continuous}}
 }
 \author{
 Jay Achar
