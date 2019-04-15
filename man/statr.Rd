@@ -9,8 +9,10 @@
 The package provides functions to analyse and present data using statistical methods
 }
 \seealso{
+\code{\link{glm_generator}}
+
 \code{\link{normal_checkr}}
 }
 \author{
-Jay Achar \email{jay.achar@doctors.org.uk}
+Jay Achar
 }

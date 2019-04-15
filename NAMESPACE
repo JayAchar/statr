@@ -2,6 +2,9 @@
 
 export(glm_generator)
 export(normal_checkr)
+export(round_percent)
+export(tabulate_categorical)
+importFrom(assertthat,assert_that)
 importFrom(broom,augment)
 importFrom(broom,glance)
 importFrom(broom,tidy)

@@ -5,7 +5,7 @@
 #' @param x string of formulas
 #' @param data name of data object
 #' @param family define type of GLM required
-#'
+#' @author Jay Achar
 #' @return nested tibble 
 #' @importFrom purrr compose partial map map_dbl
 #' @importFrom tibble tibble
@@ -13,6 +13,7 @@
 #' @importFrom broom glance tidy augment
 #' @importFrom stats glm as.formula gaussian
 #' @importFrom magrittr %>% 
+#' @seealso \code{\link{statr}}
 #' @export
 #'
 #' @examples

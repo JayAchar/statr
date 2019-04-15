@@ -3,7 +3,8 @@
 #' The package provides functions to analyse and present data using statistical methods
 #' 
 #' 
-#' @author Jay Achar \email{jay.achar@@doctors.org.uk}
+#' @author Jay Achar 
+#' @seealso \code{\link{glm_generator}} 
 #' @seealso \code{\link{normal_checkr}} 
 #' 
 #' @docType package

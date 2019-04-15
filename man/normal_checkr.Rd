@@ -23,5 +23,5 @@ normal_checkr(mtcars$mpg)
 \code{\link{statr}}
 }
 \author{
-Jay Achar \email{jay.achar@doctors.org.uk}
+Jay Achar
 }

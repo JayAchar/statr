@@ -4,7 +4,7 @@
 #' and checks it against the Normal distribution. THe input
 #' must be a numerical vector and the output is a list.
 #' @param x a numerical vector
-#' @author Jay Achar \email{jay.achar@@doctors.org.uk}
+#' @author Jay Achar
 #' @seealso \code{\link{statr}}
 #' @importFrom nortest ad.test
 #' @importFrom ggpubr ggdensity ggqqplot

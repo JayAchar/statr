@@ -24,3 +24,9 @@ coefficients, diagnostic parameters and predicted values in a tibble.
 formulas <- c("mpg ~ hp", "mpg ~ cyl", "mpg ~ wt")
 glm_generator(x = formulas, data = mtcars, family = gaussian)
 }
+\seealso{
+\code{\link{statr}}
+}
+\author{
+Jay Achar
+}
