@@ -1,27 +1,36 @@
 #' Tabulate categorical variable
+#' 
+#' @usage tabulate_categorical(x,
+#' round_digits = 1,
+#' useNA = c("ifany", "always", "no"))
 #'
 #' @param x variable object for tabulation
 #' @param round_digits integer to define how many digits to round the percentage
+#' @param useNA whether to include NA values in the table. See ‘Details’. Can be abbreviated.
 #'
+#' @details \code{useNA} controls if the table includes counts of NA values: the allowed values correspond 
+#' to never ("no"), only if the count is positive ("ifany") and even for zero counts ("always"). 
 #' @author Jay Achar
 #' @return data frame with one row per unique value within the input variable
 #' and columns containing the unique values and their counts with associated percentages
-#' @export
+#' @export 
 #' @importFrom assertthat assert_that
 #' @seealso \code{\link{statr}}
 #' @examples
 #' tabulate_categorical(mtcars$vs)
 
 tabulate_categorical <- function(x,
-                                 round_digits = 1) {
+                                 round_digits = 1,
+                                 useNA = c("ifany", "always", "no")) {
   # arg cheks
   assert_that(is.numeric(round_digits))
+  useNA <- match.arg(useNA)
 
-  # record unique levels of categorical variable
-  lvl_names <- unique(x)
-  
   # tabulate variable
-  tab <- table(x)
+  tab <- table(x, useNA = useNA)
+  
+  # record unique levels of categorical variable
+  lvl_names <- names(tab)
   
   # calculate proportios
   prop <- prop.table(tab)

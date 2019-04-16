@@ -4,12 +4,16 @@
 \alias{tabulate_categorical}
 \title{Tabulate categorical variable}
 \usage{
-tabulate_categorical(x, round_digits = 1)
+tabulate_categorical(x,
+round_digits = 1,
+useNA = c("ifany", "always", "no"))
 }
 \arguments{
 \item{x}{variable object for tabulation}
 
 \item{round_digits}{integer to define how many digits to round the percentage}
+
+\item{useNA}{whether to include NA values in the table. See ‘Details’. Can be abbreviated.}
 }
 \value{
 data frame with one row per unique value within the input variable
@@ -17,6 +21,10 @@ and columns containing the unique values and their counts with associated percen
 }
 \description{
 Tabulate categorical variable
+}
+\details{
+\code{useNA} controls if the table includes counts of NA values: the allowed values correspond 
+to never ("no"), only if the count is positive ("ifany") and even for zero counts ("always").
 }
 \examples{
 tabulate_categorical(mtcars$vs)

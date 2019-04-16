@@ -2,7 +2,7 @@ Package: statr
 Type: Package
 Title: Tools for Statistical Analyses
 Version: 0.0.0.9001
-Date: 2019-04-15
+Date: 2019-04-16
 Authors@R: person("Jay", "Achar", 
     email = "jay.achar@doctors.org.uk", 
     role = c("aut", "cre"),
@@ -25,3 +25,5 @@ Imports:
 	stats(>= 3.5.0),
 	tibble (>= 1.4.2)
 URL: https://github.com/JayAchar/statr
+Suggests: 
+    testthat
