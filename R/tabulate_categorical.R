@@ -1,10 +1,12 @@
 #' Tabulate categorical variable
 #' 
 #' @usage tabulate_categorical(x,
+#' variable_name, 
 #' round_digits = 1,
 #' useNA = c("ifany", "always", "no"))
 #'
 #' @param x variable object for tabulation
+#' @param variable_name String variable name to include in first column of output table.
 #' @param round_digits integer to define how many digits to round the percentage
 #' @param useNA whether to include NA values in the table. See ‘Details’. Can be abbreviated.
 #'
@@ -17,13 +19,15 @@
 #' @importFrom assertthat assert_that
 #' @seealso \code{\link{statr}}
 #' @examples
-#' tabulate_categorical(mtcars$vs)
+#' tabulate_categorical(mtcars$vs, variable_name = "VS")
 
 tabulate_categorical <- function(x,
+                                 variable_name,
                                  round_digits = 1,
                                  useNA = c("ifany", "always", "no")) {
   # arg cheks
-  assert_that(is.numeric(round_digits))
+  assert_that(is.numeric(round_digits),
+              is.character(variable_name))
   useNA <- match.arg(useNA)
 
   # tabulate variable
@@ -42,9 +46,12 @@ tabulate_categorical <- function(x,
   combo <- paste0(tab, " (", prop_clean, ")")
   
   # generate data frame with variable levels, counts and proportions
-  df <- data.frame(lvl_names = lvl_names,
-                   values = combo,
-                   stringsAsFactors = FALSE)
+  df <- data.frame(
+    var_name = c(variable_name, rep("", length(tab) - 1)),
+    lvl_names = lvl_names,
+    values = combo,
+    stringsAsFactors = FALSE
+  )
   
   df
 }

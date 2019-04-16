@@ -1,6 +1,7 @@
 #' Tabulate continuous variable
 #'
 #' @param x Variable object for tabulation.
+#' @param variable_name String variable name to include in first column of output table.
 #' @param round_digits Integer to define how many digits to round the percentage.
 #' @param ... Additional arguments to be passed to nested functions (e.g. na.rm = TRUE).
 #'
@@ -13,13 +14,15 @@
 #' @export
 #'
 #' @examples
-#' tabulate_continuous(mtcars$mpg)
+#' tabulate_continuous(mtcars$mpg, variable_name = "MPG")
 
-tabulate_continuous <- function(x, 
+tabulate_continuous <- function(x,
+                                variable_name,
                                 round_digits = 1, 
                                 ...) {
   # check args
-  assert_that(is.numeric(round_digits))
+  assert_that(is.numeric(round_digits),
+              is.character(variable_name))
   
   # calculate median
   med <- round(median(x, ...), round_digits)

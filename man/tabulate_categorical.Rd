@@ -5,11 +5,14 @@
 \title{Tabulate categorical variable}
 \usage{
 tabulate_categorical(x,
+variable_name, 
 round_digits = 1,
 useNA = c("ifany", "always", "no"))
 }
 \arguments{
 \item{x}{variable object for tabulation}
+
+\item{variable_name}{String variable name to include in first column of output table.}
 
 \item{round_digits}{integer to define how many digits to round the percentage}
 
@@ -27,7 +30,7 @@ Tabulate categorical variable
 to never ("no"), only if the count is positive ("ifany") and even for zero counts ("always").
 }
 \examples{
-tabulate_categorical(mtcars$vs)
+tabulate_categorical(mtcars$vs, variable_name = "VS")
 }
 \seealso{
 \code{\link{statr}}

@@ -4,10 +4,12 @@
 \alias{tabulate_continuous}
 \title{Tabulate continuous variable}
 \usage{
-tabulate_continuous(x, round_digits = 1, ...)
+tabulate_continuous(x, variable_name, round_digits = 1, ...)
 }
 \arguments{
 \item{x}{Variable object for tabulation.}
+
+\item{variable_name}{String variable name to include in first column of output table.}
 
 \item{round_digits}{Integer to define how many digits to round the percentage.}
 
@@ -21,7 +23,7 @@ and columns containing the unique values and their counts with associated percen
 Tabulate continuous variable
 }
 \examples{
-tabulate_continuous(mtcars$mpg)
+tabulate_continuous(mtcars$mpg, variable_name = "MPG")
 }
 \seealso{
 \code{\link{statr}}
