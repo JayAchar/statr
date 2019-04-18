@@ -6,6 +6,7 @@
 #' @author Jay Achar 
 #' @seealso \code{\link{glm_generator}} 
 #' @seealso \code{\link{normal_checkr}} 
+#' @seealso \code{\link{tabulate_all_variables}} 
 #' @seealso \code{\link{tabulate_categorical}} 
 #' @seealso \code{\link{tabulate_continuous}} 
 #' 

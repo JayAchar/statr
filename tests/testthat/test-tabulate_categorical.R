@@ -12,7 +12,7 @@ test_that("clean categorical vector works", {
   expect_equal(output$lvl_names, c("0", "1"))
   expect_equal(class(output), "data.frame")
   expect_equal(as.character(sapply(output, typeof)), 
-               c("character", "character", "character"))
+               rep("character", 3))
   expect_true(all(dim(tabulate_categorical(mtcars$vs,
                                            variable_name = "VS",
                                            useNA = "always"))),

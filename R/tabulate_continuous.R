@@ -38,7 +38,8 @@ tabulate_continuous <- function(x,
   output <- paste0(med, iqr_string)
   
   # generate output data frame
-  df <- data.frame(lvl_names = "",
+  df <- data.frame(var_name = variable_name, 
+                   lvl_names = "",
                    values = output,
                    stringsAsFactors = FALSE)
   df

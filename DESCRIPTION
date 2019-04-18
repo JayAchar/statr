@@ -1,8 +1,8 @@
 Package: statr
 Type: Package
 Title: Tools for Statistical Analyses
-Version: 0.0.0.9001
-Date: 2019-04-16
+Version: 0.0.0.9002
+Date: 2019-04-18
 Authors@R: person("Jay", "Achar", 
     email = "jay.achar@doctors.org.uk", 
     role = c("aut", "cre"),
@@ -17,6 +17,7 @@ BugReports: https://github.com/JayAchar/statr/issues
 Imports:
   assertthat (>= 0.2.1),
   broom (>= 0.5.1),
+  dplyr (>= 0.8.0),
   ggpubr(>= 0.1.7),
   magrittr (>= 1.5),
 	nortest(>= 1.0.4),

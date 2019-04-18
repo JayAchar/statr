@@ -5,14 +5,14 @@ output <- tabulate_continuous(mtcars$mpg,
                               round_digits = 1)
 
 test_that("clean continuous vector works", {
-  expect_true(all(dim(output) == c(1, 2)))
+  expect_true(all(dim(output) == c(1, 3)))
   expect_true(all(
-    names(output) == c("lvl_names", "values")
+    names(output) == c("var_name", "lvl_names", "values")
   ))
   expect_equal(output$lvl_names, "")
   expect_equal(class(output), "data.frame")
   expect_equal(as.character(sapply(output, typeof)), 
-               c("character", "character"))
+               c("character", "character", "character"))
 })
 
 # incorporate NA input values
