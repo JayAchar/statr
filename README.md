@@ -3,6 +3,9 @@
 statr
 =====
 
+<!-- badges: start -->
+[![Travis build status](https://travis-ci.org/JayAchar/statr.svg?branch=master)](https://travis-ci.org/JayAchar/statr) [![Codecov test coverage](https://codecov.io/gh/JayAchar/statr/branch/master/graph/badge.svg)](https://codecov.io/gh/JayAchar/statr?branch=master) <!-- badges: end -->
+
 The goal of statr is to ...
 
 Installation
