@@ -8,7 +8,7 @@ Authors@R: person("Jay", "Achar",
     role = c("aut", "cre"),
     comment = c(ORCID = "0000-0002-2521-4422"))
 Description: Contains tools for describing, testing and analysing cleaned data using statistical methods.
-Depends: R (>= 3.5.0)
+Depends: R (>= 3.4.0)
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
@@ -23,7 +23,7 @@ Imports:
 	nortest(>= 1.0.4),
 	purrr (>= 0.2.5),
 	rlang (>= 0.3.0.1),
-	stats(>= 3.5.0),
+	stats,
 	tibble (>= 1.4.2)
 URL: https://github.com/JayAchar/statr
 Suggests: 
