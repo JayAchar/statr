@@ -4,14 +4,14 @@ statr
 =====
 
 <!-- badges: start -->
-[![Travis build status](https://travis-ci.org/JayAchar/statr.svg?branch=master)](https://travis-ci.org/JayAchar/statr) [![Codecov test coverage](https://codecov.io/gh/JayAchar/statr/branch/master/graph/badge.svg)](https://codecov.io/gh/JayAchar/statr?branch=master) <!-- badges: end -->
+[![Travis build status](https://travis-ci.org/JayAchar/statr.svg?branch=master)](https://travis-ci.org/JayAchar/statr) [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/JayAchar/statr?branch=master&svg=true)](https://ci.appveyor.com/project/JayAchar/statr) [![Codecov test coverage](https://codecov.io/gh/JayAchar/statr/branch/master/graph/badge.svg)](https://codecov.io/gh/JayAchar/statr?branch=master) [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip) <!-- badges: end -->
 
-The goal of statr is to ...
+The `statr` package was developed as a personal set of tools for performing statistical analyses. The packages continues to be developed.
 
 Installation
 ------------
 
-You can install the released version of statr from [CRAN](https://CRAN.R-project.org) with:
+You can install the released version of statr from [Github](https://www.github.com/JayAchar/statr) with:
 
 ``` r
 install.packages("statr")

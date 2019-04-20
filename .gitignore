@@ -1,6 +1,13 @@
 .Rproj.user
 .Rhistory
 
+inst/doc
+docs/*
+
+.Rproj.user
+.Rhistory
+*.Rproj
+
 ### Data
 *.xls
 *.xlsx
